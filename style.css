@@ -1,0 +1,359 @@
+@font-face {
+  font-family: "TT Lakes";
+  src: url("fonts/TTLakes-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TT Lakes";
+  src: url("fonts/TTLakes-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TT Lakes";
+  src: url("fonts/TTLakes-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+html{
+box-sizing: border-box;
+}
+
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: "TT Lakes", sans-serif;
+    margin: 0;
+    min-width: 320px;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    background-color: #F8F8F8;
+
+}
+
+.wrapper{
+}
+
+.title{
+  min-width: 320px;
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(to right, #F8F8F8, #FFFFFF);
+  border-top: 1px solid #D9FFF5;
+}
+
+.title__text{
+  font-size:16px;
+  font-weight:400;
+  line-height:24px;
+  letter-spacing: -0.2px;
+  margin:0px 0px 30px 0px;
+  color:#7E7E82;
+  margin-top: 16px;
+  margin-left: 16px;
+}
+
+.swiper-container{
+  max-width: 300px;
+  max-height: 234px;
+}
+
+.flex-container{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  min-width: 0;
+}
+
+.image-slider{
+  padding-top: 16px;
+  padding-left: 16px;
+}
+
+
+
+
+
+.image-slider__wrapper{
+
+}
+
+.image-slider__slide{
+
+}
+
+
+.image-slider__image{
+  
+}
+
+.image-slider__image img{
+  max-width: 100%;
+}
+
+
+.swiper-pagination-bullet{
+  background-color: #B5B6BC;
+  transform: scale(1.5);
+
+}
+
+.swiper-pagination{
+bottom: auto !important;
+}
+
+.swiper-slide {
+
+}
+
+.flex-container{
+  display: none;
+}
+
+.button{
+  display: none;
+}
+
+
+@media (min-width: 768px){
+  .swiper-container{
+    display: none;
+  }
+
+.wrapper{
+display: flex;
+row-gap: 24px;
+flex-direction: column;
+
+}
+
+.title{
+  margin-left: 24px;
+  height: 56px;
+}
+
+.title__text{
+  margin-left: 0px;
+
+}
+  
+  .flex-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-left: 24px;
+ 
+}
+
+.image{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 16px;
+  margin-left: 0;
+  padding-left: 0;
+
+}
+
+li{
+  list-style: none;
+}
+
+.image__size{
+  display: flex;
+  width: 224px;
+  height: 72px;
+  background-color: #FFFFFF;
+  border: 1px #EAEAEA solid;
+  border-radius: 5%;
+  align-self: center;
+  justify-content: center;
+  
+}
+
+
+.image__container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+   width: 224px;
+  height: 72px;
+  align-items: center;
+  justify-content: space-between;
+ }
+
+.cloned{
+  display: flex;
+}
+
+.brand{
+  display: flex;
+  flex-wrap: wrap;
+  width: 224px;
+  height: 72px;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.logo{
+  padding-left: 16px;
+
+}
+
+.flex-container .acer,
+.flex-container .sony
+{
+  display: none;
+}
+
+.image__size .image__arrow{
+ width: 40px;
+ height: 40px;
+ transform: translateX(-15px);
+}
+
+
+
+.button{
+  display: flex;
+  margin-left: 24px;
+  width: 134px;
+  height: 24px;
+}
+
+.button img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.button img:last-child{
+  display: none;
+}
+}
+
+
+@media (min-width: 1120px){
+  .swiper-container{
+    display: none;
+  }
+
+.wrapper{
+display: flex;
+row-gap: 24px;
+flex-direction: column;
+
+}
+
+.title{
+  margin-left: 32px;
+  height: 56px;
+}
+
+.title__text{
+  margin-left: 0px;
+
+}
+  
+ .flex-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-left: 24px;
+ 
+}
+
+.image{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 16px;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+li{
+  list-style: none;
+}
+
+.image__size{
+  width: 224px;
+  height: 72px;
+  background-color: #FFFFFF;
+  border: 1px #EAEAEA solid;
+  border-radius: 5%;
+  align-items: center;
+  justify-content: center;
+}
+
+.image__container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+   width: 224px;
+  height: 72px;
+  align-items: center;
+  justify-content: space-between;
+ }
+
+.cloned{
+  display: flex;
+}
+
+.brand{
+  display: flex;
+  flex-wrap: wrap;
+  width: 224px;
+  height: 72px;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.logo{
+  padding-left: 16px;
+
+}
+
+.image__size .image__arrow{
+ width: 40px;
+ height: 40px;
+ transform: translateX(-15px);
+}
+
+
+.button{
+  display: flex;
+  margin-left: 31px;
+  width: 134px;
+  height: 24px;
+
+}
+
+.button img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.flex-container .acer,
+.flex-container .sony
+{
+  display: flex;
+}
+
+}
